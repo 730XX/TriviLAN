@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="20dp">
+
+    <!-- Centered Card Container -->
+    <LinearLayout
+        android:id="@+id/card_waiting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_card"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingVertical="48dp"
+        android:paddingHorizontal="24dp">
+
+        <!-- Floating Hourglass Icon -->
+        <ImageView
+            android:id="@+id/iv_hourglass"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/hourglass"
+            app:tint="@color/primary"
+            android:contentDescription="Reloj de arena" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¡Ronda completada!"
+            android:textColor="@color/foreground"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/font_outfit"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/tv_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Esperando a que tus amigos terminen de responder..."
+            android:textColor="@color/muted_foreground"
+            android:textSize="14sp"
+            android:fontFamily="@font/font_sans"
+            android:gravity="center"
+            android:layout_marginBottom="28dp" />
+
+        <!-- Progress Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ProgressBar
+                android:id="@+id/pb_players"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                android:background="@drawable/bg_progress_track"
+                android:progressDrawable="@drawable/progress_bar_waiting" />
+
+            <TextView
+                android:id="@+id/tv_players_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1 de 1 jugadores terminaron"
+                android:textColor="@color/muted_foreground"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/font_sans"
+                tools:text="2 de 4 jugadores terminaron" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

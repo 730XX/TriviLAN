@@ -1,0 +1,39 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Frog Face -->
+    <path
+        android:fillColor="#5EA832"
+        android:pathData="M24,24m-22,0a22,22 0,1 1,44 0a22,22 0,1 1,-44 0" />
+    <!-- Big Frog Eyes Outer -->
+    <path
+        android:fillColor="#5EA832"
+        android:pathData="M16,14m-7,0a7,7 0,1 1,14 0a7,7 0,1 1,-14 0" />
+    <path
+        android:fillColor="#5EA832"
+        android:pathData="M32,14m-7,0a7,7 0,1 1,14 0a7,7 0,1 1,-14 0" />
+    <!-- White Eye Bulges -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M16,14m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M32,14m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+    <!-- Pupils -->
+    <path
+        android:fillColor="#991B1B"
+        android:pathData="M16,14m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0" />
+    <path
+        android:fillColor="#991B1B"
+        android:pathData="M32,14m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0" />
+    <!-- Big Lips / Smug Mouth -->
+    <path
+        android:fillColor="#498426"
+        android:pathData="M12,28q12,7 24,0q-12,12 -24,0z" />
+    <path
+        android:strokeColor="#2F5518"
+        android:strokeWidth="1.5"
+        android:pathData="M12,28q12,5 24,0" />
+</vector>

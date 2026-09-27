@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Background Circle -->
+    <path
+        android:fillColor="@color/secondary"
+        android:pathData="M24,24m-22,0a22,22 0,1 1,44 0a22,22 0,1 1,-44 0" />
+    <!-- Head -->
+    <path
+        android:fillColor="@color/primary_foreground"
+        android:pathData="M24,20m-7,0a7,7 0,1 1,14 0a7,7 0,1 1,-14 0" />
+    <!-- Body -->
+    <path
+        android:fillColor="@color/primary_foreground"
+        android:pathData="M24,30c-5.5,0 -13,2.8 -13,7v2h26v-2c0,-4.2 -7.5,-7 -13,-7z" />
+</vector>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="4dp"
+    android:background="@drawable/bg_card"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <!-- Wifi Icon Box -->
+    <FrameLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_qr_box">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:contentDescription="WiFi"
+            android:src="@drawable/wifi"
+            app:tint="@color/accent" />
+    </FrameLayout>
+
+    <!-- Center Room Info -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_room_host"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/font_sans"
+            android:singleLine="true"
+            android:textColor="@color/foreground"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="Sala de Tom" />
+
+        <TextView
+            android:id="@+id/tv_room_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/font_sans"
+            android:singleLine="true"
+            android:textColor="@color/muted_foreground"
+            android:textSize="12sp"
+            tools:text="192.168.1.42:8888 · 12 ms" />
+    </LinearLayout>
+
+    <!-- Right Players Info -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:contentDescription="Jugadores"
+            android:src="@drawable/users"
+            app:tint="@color/muted_foreground" />
+
+        <TextView
+            android:id="@+id/tv_room_players"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/font_sans"
+            android:textColor="@color/muted_foreground"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:text="3/8" />
+    </LinearLayout>
+
+</LinearLayout>

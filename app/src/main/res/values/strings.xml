@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TriviaLAN</string>
+
+    <!-- Home Screen -->
+    <string name="home_title">TriviaLAN</string>
+    <string name="home_subtitle">Duelo de trivia en tu red local</string>
+    <string name="home_avatar_label">ELIGE TU AVATAR</string>
+    <string name="home_player_name_label">TU NOMBRE</string>
+    <string name="home_player_name_hint">Nombre...</string>
+    <string name="home_create_room_title">Crear Sala</string>
+    <string name="home_create_room_desc">Serás el anfitrión. Configura la trivia e inicia la partida.</string>
+    <string name="home_join_room_title">Unirse a Sala</string>
+    <string name="home_join_room_desc">Conéctate a la IP del anfitrión para jugar.</string>
+
+    <!-- Host Lobby -->
+    <string name="lobby_players_format">Jugadores en la sala (%d)</string>
+</resources>

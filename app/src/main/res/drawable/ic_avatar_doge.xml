@@ -1,0 +1,44 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Doge face background -->
+    <path
+        android:fillColor="@color/gold"
+        android:pathData="M24,24m-22,0a22,22 0,1 1,44 0a22,22 0,1 1,-44 0" />
+    <!-- Ears -->
+    <path
+        android:fillColor="#D1834B"
+        android:pathData="M11,10L19,19L10,21Z" />
+    <path
+        android:fillColor="#D1834B"
+        android:pathData="M37,10L38,21L29,19Z" />
+    <!-- Cheeks/Snout -->
+    <path
+        android:fillColor="#FFF6E0"
+        android:pathData="M24,26m-11,0a11,9 0,1 1,22 0a11,9 0,1 1,-22 0" />
+    <!-- Nose -->
+    <path
+        android:fillColor="#0B0E1E"
+        android:pathData="M24,28m-3,0a3,2 0,1 1,6 0a3,2 0,1 1,-6 0" />
+    <!-- Eyes -->
+    <path
+        android:fillColor="#0B0E1E"
+        android:pathData="M16,21m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0" />
+    <path
+        android:fillColor="#0B0E1E"
+        android:pathData="M32,21m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0" />
+    <!-- Eye highlights -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M15,20m-1,0a1,1 0,1 1,2 0a1,1 0,1 1,-2 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M31,20m-1,0a1,1 0,1 1,2 0a1,1 0,1 1,-2 0" />
+    <!-- Smirk -->
+    <path
+        android:strokeColor="#0B0E1E"
+        android:strokeWidth="1.5"
+        android:pathData="M21,32c1.5,1.5 4.5,1.5 6,0" />
+</vector>

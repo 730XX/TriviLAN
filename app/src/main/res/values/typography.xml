@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.TriviaLAN" parent="android:TextAppearance" />
+
+    <style name="TextAppearance.TriviaLAN.DisplayLarge">
+        <item name="fontFamily">@font/font_outfit</item>
+        <item name="android:fontFamily">@font/font_outfit</item>
+        <item name="android:textSize">42sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/foreground</item>
+    </style>
+
+    <style name="TextAppearance.TriviaLAN.Subtitle">
+        <item name="fontFamily">@font/font_sans</item>
+        <item name="android:fontFamily">@font/font_sans</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/muted_foreground</item>
+    </style>
+
+    <style name="TextAppearance.TriviaLAN.LabelUpper">
+        <item name="fontFamily">@font/font_sans</item>
+        <item name="android:fontFamily">@font/font_sans</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/muted_foreground</item>
+    </style>
+
+    <style name="TextAppearance.TriviaLAN.Body">
+        <item name="fontFamily">@font/font_sans</item>
+        <item name="android:fontFamily">@font/font_sans</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/foreground</item>
+    </style>
+
+    <style name="TextAppearance.TriviaLAN.ActionTitleHost">
+        <item name="fontFamily">@font/font_outfit</item>
+        <item name="android:fontFamily">@font/font_outfit</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primary_foreground</item>
+    </style>
+
+    <style name="TextAppearance.TriviaLAN.ActionDescHost">
+        <item name="fontFamily">@font/font_sans</item>
+        <item name="android:fontFamily">@font/font_sans</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/primary_foreground</item>
+    </style>
+
+    <style name="TextAppearance.TriviaLAN.ActionTitleJoin">
+        <item name="fontFamily">@font/font_outfit</item>
+        <item name="android:fontFamily">@font/font_outfit</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/accent_foreground</item>
+    </style>
+
+    <style name="TextAppearance.TriviaLAN.ActionDescJoin">
+        <item name="fontFamily">@font/font_sans</item>
+        <item name="android:fontFamily">@font/font_sans</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/accent_foreground</item>
+    </style>
+</resources>

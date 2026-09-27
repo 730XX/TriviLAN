@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingVertical="6dp"
+    android:paddingHorizontal="4dp">
+
+    <!-- Position Number -->
+    <TextView
+        android:id="@+id/tv_position"
+        android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textColor="@color/muted_foreground"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/font_sans"
+        tools:text="4" />
+
+    <!-- Avatar Image -->
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/avatar_tom"
+        android:contentDescription="Avatar" />
+
+    <!-- Player Name -->
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/foreground"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/font_sans"
+        tools:text="Lucas" />
+
+    <!-- Score -->
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/muted_foreground"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/font_sans"
+        tools:text="850 pts" />
+
+</LinearLayout>

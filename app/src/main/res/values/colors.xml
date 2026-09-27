@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#0B0E1E</color>
+    <color name="foreground">#F6F9FC</color>
+    <color name="card">#171C2E</color>
+    <color name="card_foreground">#F6F9FC</color>
+    <color name="primary">#853BEB</color>
+    <color name="primary_foreground">#FBFCFD</color>
+    <color name="secondary">#242A3F</color>
+    <color name="secondary_foreground">#F6F9FC</color>
+    <color name="muted">#242A3F</color>
+    <color name="muted_foreground">#92A3BB</color>
+    <color name="accent">#00B5D5</color>
+    <color name="accent_foreground">#0B0E1E</color>
+    <color name="destructive">#ED4040</color>
+    <color name="destructive_foreground">#FBFCFD</color>
+    <color name="success">#18BA82</color>
+    <color name="success_foreground">#0B0E1E</color>
+    <color name="warning">#F59F15</color>
+    <color name="warning_foreground">#0B0E1E</color>
+    <color name="gold">#F5BE2B</color>
+    <color name="silver">#BEC4CE</color>
+    <color name="bronze">#D1834B</color>
+    <color name="border">#29324A</color>
+    <color name="input">#29324A</color>
+    <color name="gradient_host_start">#853BEB</color>
+    <color name="gradient_host_end">#BA5BCF</color>
+    <color name="gradient_join_start">#00B5D5</color>
+    <color name="gradient_join_end">#0092DF</color>
+</resources>

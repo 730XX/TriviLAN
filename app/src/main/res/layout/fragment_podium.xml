@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- Confetti Particle Layer -->
+    <com.example.emptyapplication.presentation.ui.ConfettiView
+        android:id="@+id/view_confetti"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/tv_podium_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¡Fin de la partida!"
+                android:textColor="@color/foreground"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/font_outfit"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Podium Stage (2nd, 1st, 3rd) -->
+            <LinearLayout
+                android:id="@+id/layout_podium_stage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom"
+                android:baselineAligned="false"
+                android:layout_marginBottom="24dp">
+
+                <!-- 2nd Place (Silver) -->
+                <LinearLayout
+                    android:id="@+id/step_second"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal|bottom"
+                    android:layout_marginEnd="6dp">
+
+                    <ImageView
+                        android:id="@+id/iv_avatar_second"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:src="@drawable/avatar_tom"
+                        android:contentDescription="Avatar 2° lugar" />
+
+                    <TextView
+                        android:id="@+id/tv_name_second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Maru"
+                        android:textColor="@color/foreground"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/font_sans"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        tools:text="Maru" />
+
+                    <TextView
+                        android:id="@+id/tv_score_second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:text="1.450 pts"
+                        android:textColor="@color/muted_foreground"
+                        android:textSize="11sp"
+                        android:fontFamily="@font/font_sans"
+                        tools:text="1.450 pts" />
+
+                    <TextView
+                        android:id="@+id/pillar_second"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@drawable/bg_podium_silver"
+                        android:gravity="center_horizontal"
+                        android:paddingTop="10dp"
+                        android:text="2"
+                        android:textColor="@color/background"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/font_outfit" />
+                </LinearLayout>
+
+                <!-- 1st Place (Gold) -->
+                <LinearLayout
+                    android:id="@+id/step_first"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal|bottom"
+                    android:layout_marginHorizontal="4dp">
+
+                    <ImageView
+                        android:id="@+id/iv_crown"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginBottom="4dp"
+                        android:src="@drawable/crown"
+                        app:tint="@color/gold"
+                        android:contentDescription="Corona ganador" />
+
+                    <ImageView
+                        android:id="@+id/iv_avatar_first"
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:src="@drawable/avatar_tom"
+                        android:contentDescription="Avatar 1° lugar" />
+
+                    <TextView
+                        android:id="@+id/tv_name_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Tú"
+                        android:textColor="@color/foreground"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/font_sans"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        tools:text="Tú" />
+
+                    <TextView
+                        android:id="@+id/tv_score_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:text="2.100 pts"
+                        android:textColor="@color/muted_foreground"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/font_sans"
+                        tools:text="2.100 pts" />
+
+                    <TextView
+                        android:id="@+id/pillar_first"
+                        android:layout_width="match_parent"
+                        android:layout_height="114dp"
+                        android:background="@drawable/bg_podium_gold"
+                        android:gravity="center_horizontal"
+                        android:paddingTop="12dp"
+                        android:text="1"
+                        android:textColor="@color/background"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/font_outfit" />
+                </LinearLayout>
+
+                <!-- 3rd Place (Bronze) -->
+                <LinearLayout
+                    android:id="@+id/step_third"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal|bottom"
+                    android:layout_marginStart="6dp">
+
+                    <ImageView
+                        android:id="@+id/iv_avatar_third"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:src="@drawable/avatar_tom"
+                        android:contentDescription="Avatar 3° lugar" />
+
+                    <TextView
+                        android:id="@+id/tv_name_third"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Santi"
+                        android:textColor="@color/foreground"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/font_sans"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        tools:text="Santi" />
+
+                    <TextView
+                        android:id="@+id/tv_score_third"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:text="980 pts"
+                        android:textColor="@color/muted_foreground"
+                        android:textSize="11sp"
+                        android:fontFamily="@font/font_sans"
+                        tools:text="980 pts" />
+
+                    <TextView
+                        android:id="@+id/pillar_third"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:background="@drawable/bg_podium_bronze"
+                        android:gravity="center_horizontal"
+                        android:paddingTop="8dp"
+                        android:text="3"
+                        android:textColor="@color/background"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/font_outfit" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Rest of Players Card (4th onwards) -->
+            <LinearLayout
+                android:id="@+id/card_rest_players"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_rest_players"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+            </LinearLayout>
+
+            <!-- Stats Card -->
+            <LinearLayout
+                android:id="@+id/card_stats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:padding="18dp"
+                android:layout_marginBottom="24dp">
+
+                <!-- Header with Medal icon -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="14dp">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/medal"
+                        app:tint="@color/accent"
+                        android:contentDescription="Medalla" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TUS ESTADÍSTICAS"
+                        android:textColor="@color/muted_foreground"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/font_sans"
+                        android:letterSpacing="0.05" />
+                </LinearLayout>
+
+                <!-- Stats Grid (2 Columns) -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Accuracy Box -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_stat_box"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:layout_marginEnd="6dp">
+
+                        <TextView
+                            android:id="@+id/tv_accuracy_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="80%"
+                            android:textColor="@color/success"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/font_outfit"
+                            tools:text="80%" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Precisión"
+                            android:textColor="@color/muted_foreground"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/font_sans" />
+                    </LinearLayout>
+
+                    <!-- Avg Time Box -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_stat_box"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:layout_marginStart="6dp">
+
+                        <TextView
+                            android:id="@+id/tv_avg_time_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3.2s"
+                            android:textColor="@color/accent"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/font_outfit"
+                            tools:text="3.2s" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Tiempo promedio"
+                            android:textColor="@color/muted_foreground"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/font_sans" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Bottom Action Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_rematch"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    android:background="@drawable/bg_btn_start_game"
+                    android:fontFamily="@font/font_sans"
+                    android:text="Revancha"
+                    android:textAllCaps="false"
+                    android:textColor="@color/primary_foreground"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_home"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/bg_btn_outline"
+                    android:fontFamily="@font/font_sans"
+                    android:text="Menú Principal"
+                    android:textAllCaps="false"
+                    android:textColor="@color/foreground"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>
